@@ -1,0 +1,365 @@
+/* GLOBAL */
+
+body {
+  background-color: #f5f7fb;
+  font-family: "Segoe UI", sans-serif;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+.card {
+  border-radius: 18px;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+.btn {
+  border-radius: 12px;
+}
+
+/* NAVBAR */
+
+.navbar {
+  background: white !important;
+  height: 75px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.navbar-brand {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.nav-link {
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: #0d6efd !important;
+}
+
+/* SIDEBAR */
+
+.sidebar {
+  background: white;
+  min-height: 100vh;
+  padding: 20px;
+  border-right: 1px solid #eee;
+}
+
+.sidebar div {
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.sidebar div:hover {
+  background: #eef5ff;
+}
+
+.sidebar .btn {
+  border-radius: 12px;
+}
+
+/* HERO SECTION */
+
+.hero-section {
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.hero-section h1 {
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.hero-section img {
+  max-width: 100%;
+}
+
+/* STATS */
+
+.stats-card {
+  border: none;
+  border-radius: 18px;
+  background: white;
+}
+
+.stats-card h3 {
+  font-weight: 700;
+}
+
+.stats-card p {
+  margin: 0;
+  color: #666;
+}
+
+/* ISSUE CARDS */
+
+.issue-card img {
+  height: 130px;
+  object-fit: cover;
+}
+
+.issue-card .badge {
+  border-radius: 10px;
+}
+
+.issue-card:hover {
+  transform: translateY(-5px);
+}
+
+/* AI INSIGHTS */
+
+.ai-card {
+  background: linear-gradient(
+    135deg,
+    #eef6ff,
+    #ffffff
+  );
+}
+
+.ai-card h5 {
+  font-weight: 700;
+}
+
+/* LEADERBOARD */
+
+.leaderboard-item {
+  padding: 12px;
+  border-radius: 10px;
+  background: #f8f9fa;
+  margin-bottom: 10px;
+}
+
+.leaderboard-item:hover {
+  background: #eef5ff;
+}
+
+/* CHARTS */
+
+.chart-card {
+  min-height: 400px;
+}
+
+.chart-card canvas {
+  max-height: 300px;
+}
+
+/* HOW IT WORKS */
+
+.how-card {
+  transition: 0.3s;
+}
+
+.how-card:hover {
+  transform: scale(1.05);
+}
+
+/* BADGES */
+
+.badge-section .badge {
+  font-size: 1rem;
+  border-radius: 20px;
+}
+
+/* COMMUNITY IMPACT */
+
+.impact-card h2 {
+  font-weight: 700;
+  color: #0d6efd;
+}
+
+/* MAP */
+
+.map-box {
+  height: 400px;
+  border-radius: 15px;
+  background: #f1f3f6;
+}
+
+/* REPORT ISSUE */
+
+.report-card {
+  border-radius: 20px;
+}
+
+textarea {
+  resize: none;
+}
+
+/* AI ANALYSIS */
+
+.analysis-card {
+  border-left: 5px solid #0d6efd;
+}
+
+/* PROFILE */
+
+.profile-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+
+/* COMMENTS */
+
+.comment-box {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+/* HERO BADGES */
+
+.hero-badge {
+  border-radius: 20px;
+  font-size: 0.9rem;
+  padding: 8px 14px;
+}
+
+/* NOTIFICATION BELL */
+
+.notification-bell {
+  cursor: pointer;
+}
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c4c4c4;
+  border-radius: 20px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1200px) {
+
+  .hero-section h1 {
+    font-size: 2.5rem;
+  }
+
+}
+
+@media (max-width: 992px) {
+
+  .sidebar {
+    min-height: auto;
+    border-right: none;
+    margin-bottom: 20px;
+  }
+
+  .hero-section {
+    text-align: center;
+  }
+
+  .hero-section img {
+    margin-top: 20px;
+    width: 250px;
+  }
+
+  .navbar-nav {
+    margin-top: 15px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+
+  .stats-card {
+    margin-bottom: 15px;
+  }
+
+  .chart-card {
+    margin-top: 20px;
+  }
+
+  .map-box {
+    height: 250px;
+  }
+
+}
+
+@media (max-width: 576px) {
+
+  .navbar-brand {
+    font-size: 1rem;
+  }
+
+  .hero-section h1 {
+    font-size: 1.7rem;
+  }
+
+  .hero-section p {
+    font-size: 0.95rem;
+  }
+
+  .btn-lg {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .leaderboard-item {
+    font-size: 0.9rem;
+  }
+
+}
+
+.main-content {
+  min-height: 100vh;
+}
+
+.card {
+  height: 100%;
+}
+
+.row.g-4 > div {
+  display: flex;
+}
+
+.row.g-4 > div > .card {
+  flex: 1;
+}
+
+.hero-section {
+  min-height: 350px;
+}
+
+.sidebar {
+  position: sticky;
+  top: 75px;
+}
+
+@media (max-width: 992px) {
+  .sidebar {
+    position: relative;
+    top: 0;
+  }
+}
+
+.CommunityHero-img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+}
+
+.navbar-brand span {
+  font-size: 2rem;
+}
