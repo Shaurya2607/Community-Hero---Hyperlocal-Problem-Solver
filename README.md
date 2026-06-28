@@ -127,7 +127,7 @@ Community-Hero/
 ## Clone Repository
 
 ```bash
-git clone https://github.com/yourusername/community-hero.git
+git clone https://github.com/Shaurya2607/Community-Hero---Hyperlocal-Problem-Solver.git
 ```
 
 ```bash
@@ -261,12 +261,12 @@ GET /api/dashboard/analytics
 
 Add screenshots of:
 
-![alt text](image.png)
-![alt text](image-1.png)
-![alt text](image-2.png)
-![alt text](image-3.png)
-![alt text](image-4.png)
-![alt text](image-5.png)
+Community Hero - Hyperlocal Problem Solver/PreviewImages/image.png
+Community Hero - Hyperlocal Problem Solver/PreviewImages/image-1.png
+Community Hero - Hyperlocal Problem Solver/PreviewImages/image-2.png
+Community Hero - Hyperlocal Problem Solver/PreviewImages/image-3.png
+Community Hero - Hyperlocal Problem Solver/PreviewImages/image-4.png
+Community Hero - Hyperlocal Problem Solver/PreviewImages/image-5.png
 
 ---
 
