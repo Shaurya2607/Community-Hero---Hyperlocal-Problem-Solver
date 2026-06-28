@@ -261,12 +261,19 @@ GET /api/dashboard/analytics
 
 Add screenshots of:
 
-Community Hero - Hyperlocal Problem Solver/PreviewImages/image.png
-Community Hero - Hyperlocal Problem Solver/PreviewImages/image-1.png
-Community Hero - Hyperlocal Problem Solver/PreviewImages/image-2.png
-Community Hero - Hyperlocal Problem Solver/PreviewImages/image-3.png
-Community Hero - Hyperlocal Problem Solver/PreviewImages/image-4.png
-Community Hero - Hyperlocal Problem Solver/PreviewImages/image-5.png
+## Screenshots
+
+![image](PreviewImages/image.png)
+
+![image-1](PreviewImages/image-1.png)
+
+![image-2](PreviewImages/image-2.png)
+
+![image-3](PreviewImages/image-3.png)
+
+![image-4](PreviewImages/image-4.png)
+
+![image-5](PreviewImages/image-5.png)
 
 ---
 
