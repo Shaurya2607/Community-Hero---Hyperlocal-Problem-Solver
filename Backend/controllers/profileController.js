@@ -1,4 +1,4 @@
-const User = require("../models/User");
+const user = require("../models/user");
 const Issue = require("../models/Issue");
 const Comment = require("../models/Comment");
 const Notification = require("../models/Notification");
@@ -6,26 +6,26 @@ const Notification = require("../models/Notification");
 const getProfile = async (req, res) => {
   try {
     // Logged-in user
-    const user = await User.findById(req.user.id).select("-password");
+    const user = await user.findById(req.user.id).select("-password");
 
     if (!user) {
       return res.status(404).json({
         success: false,
-        message: "User not found",
+        message: "user not found",
       });
     }
 
-    // User's Issues
+    // user's Issues
     const issues = await Issue.find({
       reportedBy: req.user.id,
     }).sort({ createdAt: -1 });
 
-    // User's Comments
+    // user's Comments
     const comments = await Comment.find({
       userName: user.name,
     });
 
-    // User Notifications
+    // user Notifications
     const notifications = await Notification.find({
       userId: req.user.id,
     });

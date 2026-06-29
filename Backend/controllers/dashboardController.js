@@ -1,5 +1,5 @@
 const Issue = require("../models/Issue");
-const User = require("../models/User");
+const user = require("../models/user");
 const Comment = require("../models/Comment");
 
 const getDashboard = async (req, res) => {
@@ -26,7 +26,7 @@ const getDashboard = async (req, res) => {
       priority: "High",
     });
 
-    const totalUsers = await User.countDocuments();
+    const totalUsers = await user.countDocuments();
 
     // =========================
     // Active Citizens

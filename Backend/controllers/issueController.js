@@ -338,7 +338,7 @@ const getDashboardAnalytics = async (req, res) => {
   try {
     // Fetch all issues and users
     const issues = await Issue.find().sort({ createdAt: -1 });
-    const users = await User.find();
+    const users = await user.find();
 
     // Statistics
     const totalIssues = issues.length;

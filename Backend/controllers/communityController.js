@@ -1,5 +1,5 @@
 const Issue = require("../models/Issue");
-const User = require("../models/User");
+const user = require("../models/user");
 const Comment = require("../models/Comment");
 
 const getCommunityImpact = async (req, res) => {
@@ -19,7 +19,7 @@ const getCommunityImpact = async (req, res) => {
     }
 
     // Registered Users
-    const totalUsers = await User.countDocuments();
+    const totalUsers = await user.countDocuments();
 
     // Users who reported issues
     const issueOwners = await Issue.distinct("reportedBy");
