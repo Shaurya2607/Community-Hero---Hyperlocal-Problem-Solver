@@ -1,11 +1,11 @@
-const User = require("../models/user");
+const user = require("../models/user");
 const Issue = require("../models/Issue");
 const Comment = require("../models/Comment");
 
 const getLeaderboard = async (req, res) => {
   try {
     // Fetch all users
-    const users = await User.find().select("name email");
+    const users = await user.find().select("name email");
 
     const leaderboard = [];
 
